@@ -1,15 +1,19 @@
 body{
     background-color: white;
+    background-image: url(banner2.png);
+    background-size: 1870px 700px;
 }
 .navegacion{
     padding: 10px;
-    margin: 20px;
+    margin-bottom: 200px;
+    height: 580px;
 }
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: white;
+
 }
 nav ul li{
     list-style: none;
@@ -18,4 +22,12 @@ nav ul li{
     margin-left: 25px;
     padding: 0;
     float: left;
+}
+nav ul li a{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 8px 12px;
+    border-radius: 4px;
 }
