@@ -2,6 +2,7 @@ body{
     background-color: white;
     background-image: url(banner2.png);
     background-size: 1870px 800px;
+    margin: 0;
 }
 .navegacion{
     padding: 10px;
@@ -17,8 +18,8 @@ nav{
 nav ul li{
     list-style: none;
     display: flex;
-    gap: 20px;
-    margin-left: 25px;
+    gap: 10px;
+    margin-left: 15px;
     padding: 0;
     float: left;
 }
@@ -29,6 +30,16 @@ nav ul li a{
     background-color: black;
     padding: 8px 12px;
     border-radius: 4px;
+}
+.contenedor1{
+    background-image: url(header.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 1870px;
+    display: flex;
+    justify-content: center;
+    height: 300px;
+
 }
 
 .contenedor{
