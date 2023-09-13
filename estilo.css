@@ -1,11 +1,10 @@
 body{
     background-color: white;
     background-image: url(banner2.png);
-    background-size: 1870px 700px;
+    background-size: 1870px 800px;
 }
 .navegacion{
     padding: 10px;
-    margin-bottom: 200px;
     height: 580px;
 }
 nav{
@@ -30,4 +29,35 @@ nav ul li a{
     background-color: black;
     padding: 8px 12px;
     border-radius: 4px;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333738;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+.imgderecha{
+    height: 200px;
+    width: 200px;
+    float: left;
+    border-radius: 70px;
+}
+.imgizquierda{
+    height: 200px;
+    width: 200px;
+    float: right;
+    border-radius: 70px;
+}
+.titulo1{
+    text-align: center;
+    margin-left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.parrafo1{
+    font-size: 20px;
+    margin-bottom: 100px;
 }
