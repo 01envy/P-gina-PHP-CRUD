@@ -67,15 +67,20 @@ nav ul li a{
 
 .footer{
     background-color: rgb(61, 61, 61);
-    padding: 80px;
+    padding: 40px 0;
+}
+.imagenfooter{
+    height: 200px;
+    width: 200px;
+    margin-right: 90px;
 }
 .footerfila{
     display: flex;
     flex-wrap: wrap;
 }
 .links{
-    width: 25%;
-    padding: 0 15px;
+    width: 350px;
+    padding: 0 5px;
 }
 .links h4{
     font-size: 20px;
@@ -96,4 +101,28 @@ nav ul li a{
 .links ul li a:hover{
     color: white;
     padding-left: 6px;
+}
+.redes-sociales a{
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: black;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: white;
+    transition: all .5s ease;
+}
+.redes-sociales a:hover{
+    background-color: white;
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(61, 61, 61);
+    padding: 10px;
+    margin: 20px;
+    color: white;
 }
