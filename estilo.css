@@ -22,6 +22,7 @@ nav ul li{
     margin-left: 15px;
     padding: 0;
     float: left;
+    
 }
 nav ul li a{
     font-family: Arial, Helvetica, sans-serif;
@@ -30,6 +31,12 @@ nav ul li a{
     background-color: black;
     padding: 8px 12px;
     border-radius: 4px;
+}
+.botonesnav a{
+    transition: all .5s ease;
+}
+.botonesnav a:hover{
+    background-color: white;
 }
 .presentacion{
     display: flex;
@@ -41,7 +48,7 @@ nav ul li a{
 .cajapresentacion{
     background-color: white;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 20px;
     font-family: Arial, Helvetica, sans-serif;
     border: 1px solid black;
@@ -64,6 +71,55 @@ nav ul li a{
     rgba(0, 0, 0, 0.17) 0px 12px 13px,
     rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
+
+.titulonoticias{
+    background-color: #343739;
+    text-align: center;
+    color: white;
+}
+.noticias{
+    display: flex;
+    background-color: #343739;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cajanoticias{
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    margin: 70px;
+    box-shadow: rgba(255, 255, 255, 0.76) 5px 5px,
+    rgba(187, 187, 187, 0.3) 10px 10px,
+    rgba(255, 255, 255, 0.2) 15px 15px,
+    rgba(255, 255, 255, 0.351) 20px 20px,
+    rgba(240, 46, 170, 0.05) 25px 25px;
+}
+.cajanoticias img{
+    width: 200px;
+    height: 100px;
+}
+
+h1{
+    display: inline-block;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1::after,h1::before{
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 3px;
+    background-color: white;
+    top: 0.6em;
+}
+h1::before{
+    left: -140px;
+}
+h1::after{
+    right:-140px;
+}
+
 
 .footer{
     background-color: rgb(61, 61, 61);
@@ -123,6 +179,6 @@ nav ul li a{
     align-items: center;
     background-color: rgb(61, 61, 61);
     padding: 10px;
-    margin: 20px;
     color: white;
+    margin-top: 20px;
 }
