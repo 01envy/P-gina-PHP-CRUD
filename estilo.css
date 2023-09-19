@@ -139,6 +139,38 @@ h1::before{
 h1::after{
     right:-140px;
 }
+
+.black-noticia3{
+    background-color: #343739;
+    height: 300px;
+}
+.white-noticia3{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    margin-left: 120px;
+    margin-right: 120px;
+    box-shadow: rgba(255, 255, 255, 0.76) 5px 5px,
+    rgba(187, 187, 187, 0.3) 10px 10px,
+    rgba(255, 255, 255, 0.2) 15px 15px,
+    rgba(255, 255, 255, 0.351) 20px 20px,
+    rgba(240, 46, 170, 0.05) 25px 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.img-noticia3{
+    width: 250px;
+    height: 150px;
+    margin: 30px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px,
+    rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px,
+    rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px,
+    rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+
 .sabermas{
     background-color: #343739;
     text-align: right;
