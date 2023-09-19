@@ -4,6 +4,15 @@ body{
     background-size: 1870px 1000px;
     margin: 0;
 }
+@font-face {
+    font-family: exo2;
+    src: url(exo2.ttf);
+}
+#exo2{
+    font-family: exo2;
+}
+
+/*----------navegacion---------*/
 .navegacion{
     padding: 10px;
     height: 200px;
@@ -143,10 +152,58 @@ h1::after{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/*---------------historia------------*/
+.historia{
+    background-color: #1e2122;
+}
+.titulohistoria{
+    text-align: center;
+    color: white;
+}
+.personajes{
+    text-align: left;
+    font-size: 40px;
+    color: white;
+    font-family: exo2;
+    padding-left: 60px;
+}
+.contenedor-cartas{
+    width: 1600px;
+    display: flex;
+    justify-content: center;
+    margin-left: 150px;
+}
+.cartas{
+    width: 100%;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.807);
+    cursor: default;
+    transition: all 400ms ease;
+    text-align: center;
+    padding: 15px;
+}
+.cartas:hover{
+    box-shadow: rgba(255, 255, 255, 0.995) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    transform: translateY(-3%);
+}
+.cartas img{
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.cartas .contenedor-cartas p{
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
 
 /*---------------Footer---------------*/
 .footer{
-    background-color: rgb(61, 61, 61);
+    background-color:#343739;
     padding: 40px 0;
 }
 .imagenfooter{
@@ -201,8 +258,9 @@ h1::after{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(61, 61, 61);
+    background-color:#343739;
     padding: 10px;
     color: white;
     margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
 }
