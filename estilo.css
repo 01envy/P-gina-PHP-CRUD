@@ -1,13 +1,13 @@
+@font-face {
+  font-family: exo2;
+  src: url(exo2.ttf);
+}
+
 body {
   background-color: white;
   background-image: url(banner2.png);
   background-size: 1870px 1000px;
   margin: 0;
-}
-
-@font-face {
-  font-family: exo2;
-  src: url(exo2.ttf);
 }
 
 #exo2 {
