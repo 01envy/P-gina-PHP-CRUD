@@ -18,6 +18,7 @@ body {
 .navegacion {
   padding: 10px;
   height: 200px;
+  width: 1200px;
 }
 
 nav {
@@ -53,6 +54,21 @@ nav ul li a {
   border-radius: 4px;
 }
 
+.botonesnav {
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 500px;
+  width: 1200px;
+  -ms-flex-item-align: right;
+      align-self: right;
+  -ms-flex-line-pack: right;
+      align-content: right;
+}
+
 .botonesnav a {
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
@@ -74,7 +90,8 @@ nav ul li a {
       -ms-flex-align: center;
           align-items: center;
   margin-right: 200px;
-  margin-bottom: 100px;
+  margin-bottom: 180px;
+  margin-top: 90px;
 }
 
 .cajapresentacion {
@@ -336,15 +353,15 @@ h1::after {
 .imagenfooter {
   height: 200px;
   width: 200px;
-  margin-right: 90px;
+  margin-right: 60px;
 }
 
 .footerfila {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  width: 1200px;
+  margin-left: -150px;
 }
 
 .links {
@@ -408,5 +425,13 @@ h1::after {
   padding: 10px;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/*------------registro------------*/
+.formulario {
+  background-color: #1e2122;
+  color: white;
+  margin: 20px 500px 40px 500px;
+  padding: 40px;
 }
 /*# sourceMappingURL=estilo.css.map */
