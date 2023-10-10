@@ -240,7 +240,6 @@ h1::after{
 }
 .txthistoria2{
     flex: 1;
-    margin-left: 50px;
     margin-bottom: 280px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
@@ -249,6 +248,7 @@ h1::after{
 .parrafohistoria2{
     text-align: left;
     font-size: 20px;
+    margin-top: 100px;
 }
 .video{
     width: 1280px;
@@ -334,18 +334,3 @@ h1::after{
 
 /*------------boostrap------------*/
 
-
-.formulario{
-    background-color: #343739;
-    color: white;
-    margin: 20px 600px 100px 600px;
-    padding: 40px;
-}
-
-.carrusel{
-    background-color: #343739;
-    img{
-        width: 900px;
-        height: 500px;
-    }
-}
