@@ -337,7 +337,7 @@ h1::after{
 /*------------nosotros------------*/
 
 .nosotros{
-    background-color: #343739;
+    background-color: #1e2122;
     display: flex;
 }
 
@@ -354,7 +354,16 @@ h1::after{
 }
 .linksnosotros{
     margin-left: 760px;
-    margin-bottom: 120px;
-    
+    margin-bottom: 190px;
+}
+.contenedortitulos{
+    background-color: #1e2122;
+    display: flex;
+    color: white;
+    font-size: 40px;
+    justify-content: center;
+}
+.title{
+    padding: 10px 170px;
 }
 
