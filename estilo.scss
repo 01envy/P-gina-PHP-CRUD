@@ -5,6 +5,7 @@ body{
     background-image: url(banner2.png);
     background-size: 1870px 1000px;
     margin: 0;
+
 }
 
 #exo2{
@@ -113,6 +114,7 @@ nav{
         @include boxshadown3();
     }
 }
+
 .subrayado{
     text-decoration: underline;
 }
@@ -332,5 +334,27 @@ h1::after{
     }
 }
 
-/*------------boostrap------------*/
+/*------------nosotros------------*/
+
+.nosotros{
+    background-color: #343739;
+    display: flex;
+}
+
+.titulonosotros{
+    text-align: center;
+    h2{
+        font-size: 100px;
+        text-shadow: 2px 1px 18px rgba(255, 255, 255, 1),4px 4px 23px rgba(255, 255, 255, 0.26);
+    }
+    h1{
+        font-size: 40px;
+        text-shadow: 2px 8px 24px rgba(255, 255, 255, 1);
+    }
+}
+.linksnosotros{
+    margin-left: 760px;
+    margin-bottom: 120px;
+    
+}
 

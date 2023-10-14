@@ -323,7 +323,6 @@ h1::after {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  margin-left: 50px;
   margin-bottom: 280px;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
@@ -333,6 +332,7 @@ h1::after {
 .parrafohistoria2 {
   text-align: left;
   font-size: 20px;
+  margin-top: 100px;
 }
 
 .video {
@@ -437,11 +437,30 @@ h1::after {
   color: black;
 }
 
-/*------------registro------------*/
-.formulario {
-  background-color: #1e2122;
-  color: white;
-  margin: 20px 600px 100px 600px;
-  padding: 40px;
+/*------------nosotros------------*/
+.nosotros {
+  background-color: #343739;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.titulonosotros {
+  text-align: center;
+}
+
+.titulonosotros h2 {
+  font-size: 100px;
+  text-shadow: 2px 1px 18px white, 4px 4px 23px rgba(255, 255, 255, 0.26);
+}
+
+.titulonosotros h1 {
+  font-size: 40px;
+  text-shadow: 2px 8px 24px white;
+}
+
+.linksnosotros {
+  margin-left: 760px;
+  margin-bottom: 120px;
 }
 /*# sourceMappingURL=estilo.css.map */
