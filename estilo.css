@@ -230,7 +230,16 @@ h1::after {
 
 /*---------------registrarse---------*/
 .registrarse {
-  color: #1e2122;
+  color: white;
+  background-color: #1e2122;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 100px 600px 150px 600px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 50px 0 50px 100px;
 }
 
 /*---------------historia------------*/
