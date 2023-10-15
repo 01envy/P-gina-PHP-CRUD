@@ -379,3 +379,16 @@ h1::after{
     padding: 10px 170px;
 }
 
+.preguntas{
+    background-color: #1e2122;
+    padding: 0 300px 100px 300px;
+    .titulopreguntas{
+        color:white;
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .font-size-large{
+        font-size: 28px;
+    }
+}
