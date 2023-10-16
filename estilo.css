@@ -331,6 +331,7 @@ h1::after {
   padding: 20px;
   color: white;
   margin-top: 20px;
+  padding-right: 150px;
 }
 
 .txthistoria2 {
@@ -341,6 +342,7 @@ h1::after {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   font-size: 30px;
+  padding-left: 150px;
 }
 
 .parrafohistoria2 {
@@ -452,25 +454,18 @@ h1::after {
 }
 
 /*------------nosotros------------*/
-.nosotros {
-  background-color: #1e2122;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .titulonosotros {
   text-align: center;
 }
 
 .titulonosotros h2 {
   font-size: 100px;
-  text-shadow: 2px 1px 18px white, 4px 4px 23px rgba(255, 255, 255, 0.26);
+  text-shadow: 2px 1px 10px white, 4px 4px 23px rgba(255, 255, 255, 0.26);
 }
 
 .titulonosotros h1 {
   font-size: 40px;
-  text-shadow: 2px 8px 24px white;
+  text-shadow: 2px 2px 10px white;
 }
 
 .linksnosotros {
@@ -491,12 +486,13 @@ h1::after {
 }
 
 .title {
-  padding: 10px 170px;
+  padding: 10px 220px;
 }
 
 .preguntas {
   background-color: #1e2122;
   padding: 0 300px 100px 300px;
+  font-size: 20px;
 }
 
 .preguntas .titulopreguntas {
@@ -508,5 +504,28 @@ h1::after {
 
 .preguntas .font-size-large {
   font-size: 28px;
+}
+
+.nosotros {
+  background-color: #1e2122;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px;
+}
+
+.informacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  padding-top: 50px;
+  font-size: 20px;
+  margin-left: -60px;
+  margin-right: 20px;
+}
+
+.tab-pane {
+  width: 700px;
 }
 /*# sourceMappingURL=estilo.css.map */

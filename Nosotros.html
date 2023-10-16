@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="cssfooter/fontawesome.min.css">
     <link rel="stylesheet" href="estilo.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="icon" href="profilepic.jpg">
 
 </head>
 <body>
@@ -18,20 +19,18 @@
         <ul>
             <div class="botonesnav">
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="index.html">Nosotros</a></li>
+                <li><a href="Nosotros.html">Nosotros</a></li>
                 <li><a href="index.html">Historia</a></li>
                 <li><a href="index.html">Noticias</a></li>
                 <li>
                     <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         Login
                     </button>
-                      
-                      <!-- Modal -->
                       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
                           <div class="modal-content bg-dark">
                             <div class="modal-header">
-                              <h2 class="modal-title fs-5" id="exampleModalLabel">Registro</h2>
+                              <h2 class="modal-title fs-5" id="exampleModalLabel">Bienvenido de vuelta</h2>
                               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
@@ -101,52 +100,46 @@
   </div>
 
   <div class="nosotros">
-    <div class="container d-flex p-5">
+    <div class="container d-flex p-2">
       
-      <div class="list-group mr-5 mb-5">
-          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-            <div class="d-flex w-100 justify-content-between">
-              <h5 class="mb-1">List group item heading</h5>
-              <small>3 days ago</small>
+      <div class="informacion">
+        <div class="row">
+          <div class="col-4 ">
+            <div class="list-group" id="list-tab" role="tablist">
+              <a class="list-group-item list-group-item-action bg-dark text-light active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Creadores</a>
+              <a class="list-group-item list-group-item-action bg-dark text-light" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Moderadores</a>
+              <a class="list-group-item list-group-item-action bg-dark text-light" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Consultas</a>
+              <a class="list-group-item list-group-item-action bg-dark text-light" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Anuncios</a>
             </div>
-            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-            
-          </a>
-          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-            <div class="d-flex w-100 justify-content-between">
-              <h5 class="mb-1">List group item heading</h5>
-              <small class="text-muted">3 days ago</small>
+          </div>
+          <div class="col-8">
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                Conoce al Equipo EVA, un grupo apasionado de <br>fans que fundaron y mantienen este foro con amor<br> por Evangelion. ¡Únete a nosotros en este viaje!</div>
+              <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                Nuestro equipo de Moderadores son guardianes de la <br>comunidad, dedicados a mantener un ambiente <br>amigable y seguro en el foro. Si necesitas ayuda, <br>orientación o tienes inquietudes, no dudes en 
+                <br>contactar a uno de nuestros Moderadores de confianza.<br>Están aquí para la comunidad y asegurarse de que tu <br>experiencia sea agradable.</div>
+              <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                Tienes preguntas o teorías sobre Evangelion? <br>Nuestra sección de Consultas es el lugar perfecto <br>para obtener respuestas y debatir con otro fans<br>.También puedes preguntar en nuestras redes sociales</div>
+              <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+                No te pierdas las últimas noticias y eventos <br>relacionados con Evangelion. Mantente informado con<br> nuestros anuncios de primera mano.</div>
             </div>
-            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-            
-          </a>
-          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-            <div class="d-flex w-100 justify-content-between">
-              <h5 class="mb-1">List group item heading</h5>
-              <small class="text-muted">3 days ago</small>
-            </div>
-            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-            
-          </a>
-          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-            <div class="d-flex w-100 justify-content-between">
-              <h5 class="mb-1">List group item heading</h5>
-              <small class="text-muted">3 days ago</small>
-            </div>
-            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-            
-          </a>
+          </div>
+        </div>
       </div>
+
+
+
       <div class="card ml-5 mb-5 mt-5" style="width: 18rem;">
           <img class="card-img-top" src="profilepic.jpg" alt="Card image cap">
           <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="card-text">Fernando Veliz </p>
           </div>
       </div>
       <div class="card ml-5 mb-5 mt-5" style="width: 18rem;">
         <img class="card-img-top" src="profilepic.jpg" alt="Card image cap">
         <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">Fernando Veliz </p>
         </div>
       </div>
     </div>
@@ -162,14 +155,15 @@
         <div class="card-header" id="headingOne">
           <h2 class="mb-0">
             <button class="btn btn-link text-dark font-size-large" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" id="exo2">
-              ¿Por qué hacemos esto?
+              ¿Cúal es el propósito de este foro?
             </button>
           </h2>
         </div>
     
         <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
           <div class="card-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            El propósito de este foro es proporcionar un lugar para que los fans de Evangelion se conecten, discutan sus teorías, compartan arte, fanfiction, noticias y más. Queremos 
+            fomentar una comunidad activa y amigable.
           </div>
         </div>
       </div>
@@ -184,7 +178,8 @@
         </div>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
           <div class="card-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            Sí, pero con moderación. Te sugerimos que etiquetes claramente los spoilers en tus publicaciones ya sea con un #hashtag o ya sea en el mismo título de la publicacion y seas 
+            respetuoso con los demás miembros que no quieran verlos.
           </div>
         </div>
       </div>
@@ -198,7 +193,9 @@
         </div>
         <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
           <div class="card-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            Si tienes un problema con otro miembro, te recomendamos que primero intentes resolverlo de manera 
+            amigable a través de mensajes privados. Si eso no funciona, ponte en contacto con un moderador para 
+            que puedan mediar en la situación.
           </div>
         </div>
       </div>
@@ -214,7 +211,8 @@
     
         <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
           <div class="card-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            ¡Claro! Valoramos las sugerencias de nuestros miembros. Si tienes ideas para nuevas secciones o características, no dudes 
+            en compartirlas en la sección de comentarios o contactar a un moderador.
           </div>
         </div>
       </div>
@@ -279,9 +277,9 @@
     <img src="copyright.png" alt="copyright" width="20px">
     <h2>Copyright 2023 Fernando Véliz Silva</h2>
   </div>
-  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
