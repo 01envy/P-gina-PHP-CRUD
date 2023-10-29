@@ -528,4 +528,12 @@ h1::after {
 .tab-pane {
   width: 700px;
 }
+
+/*----------db---------*/
+
+.titulodb{
+  display: flex;
+  background-color: #1e2122;
+  text-align: center;
+}
 /*# sourceMappingURL=estilo.css.map */

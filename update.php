@@ -3,18 +3,18 @@
 include("conexion.php");
 $con=conectar();
 
-$nombres=$_POST['nombres'];
-$apellidos=$_POST['apellidos'];
-$rut=$_POST['rut'];
-$direccion=$_POST['direccion'];
+$codusuario=$_POST['codusuario'];
+$usuario=$_POST['usuario'];
+$contrasena=$_POST['contrasena'];
+$correo=$_POST['correo'];
 $sexo=$_POST['sexo'];
 $fechanac=$_POST['fechanac'];
 $edad=$_POST['edad'];
 
-$sql="UPDATE cliente SET  nombres='$nombres',apellidos='$apellidos',rut='$rut',direccion='$direccion',sexo='$sexo',fechanac='$fechanac',edad='$edad'";
+$sql="UPDATE usuarios SET  usuario='$usuario',contrasena='$contrasena',correo='$correo',sexo='$sexo',fechanac='$fechanac',edad='$edad' WHERE codusuario='$codusuario'";
 $query=mysqli_query($con,$sql);
 
     if($query){
-        Header("Location: cliente.php");
+        Header("Location: usuario.php");
     }
 ?>

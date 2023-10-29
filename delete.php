@@ -3,12 +3,12 @@
 include("conexion.php");
 $con=conectar();
 
-$rut=$_GET['rut'];
+$codusuario=$_GET['id'];
 
-$sql="DELETE FROM cliente  WHERE rut='$rut'";
+$sql="DELETE FROM usuarios  WHERE codusuario='$codusuario'";
 $query=mysqli_query($con,$sql);
 
     if($query){
-        Header("Location: cliente.php");
+        Header("Location: usuario.php");
     }
 ?>

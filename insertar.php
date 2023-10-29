@@ -2,20 +2,20 @@
 include("conexion.php");
 $con=conectar();
 
-$nombres=$_POST['nombres'];
-$apellidos=$_POST['apellidos'];
-$rut=$_POST['rut'];
-$direccion=$_POST['direccion'];
+$codusuario= null;
+$usuario=$_POST['usuario'];
+$contrasena=$_POST['contrasena'];
+$correo=$_POST['correo'];
 $sexo=$_POST['sexo'];
 $fechanac=$_POST['fechanac'];
 $edad=$_POST['edad'];
 
 
-$sql="INSERT INTO cliente VALUES('$nombres','$apellidos','$rut','$direccion','$sexo','$fechanac','$edad')";
+$sql="INSERT INTO usuarios VALUES('$codusuario','$usuario','$contrasena','$correo','$sexo','$fechanac','$edad')";
 $query= mysqli_query($con,$sql);
 
 if($query){
-    Header("Location: cliente.php");
+    Header("Location: usuario.php");
     
 }else {
 }
