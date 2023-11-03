@@ -16,7 +16,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/style.css" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-        
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
 </head>
 
     <script>
@@ -41,7 +41,7 @@
             </div>
 
             <div class="barrabusqueda">
-                <input type="text" class= "form-control" id="live_search" autocomplete="off" placeholder="Buscar...">
+                <input type="text" class= "form-control" id="getName" autocomplete="off" placeholder="Buscar...">
             </div>
         </div>
 
@@ -79,49 +79,81 @@
                         <input type="submit" class="btn btn-primary">
                     </form>
             </div>
-            <div id ="searchresult"></div>
+
+
+            <div class="container text-light">           
+                <table class="table table-striped text-light">
+                    <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Usuario</th>
+                        <th>Contraseña</th>
+                        <th>Correo</th>
+                        <th>Sexo</th>
+                        <th>F.de nacimiento</th>
+                        <th>Edad</th>
+                    </tr>
+                    </thead>
+                    <tbody id="showdata">
+                    <?php  
+                            $sql = "SELECT * FROM usuarios";
+                            $query = mysqli_query($con,$sql);
+                            while($row = mysqli_fetch_assoc($query))
+                            {
+                                $codusuario = $row['codusuario'];
+                                $usuario = $row['usuario'];
+                                $contrasena = $row['contrasena'];
+                                $correo = $row['correo'];
+                                $sexo = $row['sexo'];
+                                $fechanac = $row['fechanac'];
+                                $edad = $row['edad'];
+    
+                                ?>
+    
+                                <tr class= "text-light">
+                                    <td><?php echo $codusuario;?></td>
+                                    <td><?php echo $usuario;?></td>
+                                    <td><?php echo $contrasena;?></td>
+                                    <td><?php echo $correo;?></td>
+                                    <td><?php echo $sexo;?></td>
+                                    <td><?php echo $fechanac;?></td>
+                                    <td><?php echo $edad;?></td>
+    
+                                    <td><a href="actualizar.php?id=<?php echo $row['codusuario'] ?>" class="btn btn-info">Editar</a></td>
+                                    <td><a href="delete.php?id=<?php echo $row['codusuario'] ?>" class="btn btn-danger" onclick='return confirmacion()'>Eliminar</a></td>
+    
+                                </tr>
+    
+                                <?php
+                            }
+                            
+                        ?>
+                    </tbody>
+                </table>
+            </div>                
+
         </div>
             
         
     
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <script type= "text/javascript">
-            $(document).ready(function(){
-                $("#live_search").keyup(function(){
-                    var input = $(this).val();
-                    //alert(input);
-
-                    if(input != ""){
-                        $.ajax({
-                            url:"livesearch.php",
-                            method:"POST",
-                            data:{input:input},
-
-                            success:function(data){
-                                $("#searchresult").html(data);
-                            }
-                        });
-                    }else{
-                        $("searchresult").css("display","none");
-                    }
-                });
+    <script>
+        $(document).ready(function(){
+        $('#getName').on("keyup", function(){
+            var getName = $(this).val();
+            $.ajax({
+            method:'POST',
+            url:'livesearch.php',
+            data:{input:getName},
+            success:function(response)
+            {
+                    $("#showdata").html(response);
+            } 
             });
-    </script>
+        });
+        });
+</script>
 </body>
 </html>

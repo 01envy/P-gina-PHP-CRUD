@@ -548,6 +548,12 @@ h1::after {
 #searchresult{
   padding-left: 100px;
 }
+#showdata{
+  color: white;
+}
+tr, td{
+  color: white;
+}
 
 
 /*# sourceMappingURL=estilo.css.map */
