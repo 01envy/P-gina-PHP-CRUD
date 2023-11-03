@@ -531,9 +531,23 @@ h1::after {
 
 /*----------db---------*/
 
+.recuadro {
+  text-align: center;
+  display: flex;
+  background-color: #212529;
+  margin: 20px 0px 20px 0px;
+  padding: 20px;
+
+}
 .titulodb{
   display: flex;
-  background-color: #1e2122;
-  text-align: center;
+  justify-content: center;
+  text-shadow: 2px 1px 10px white, 4px 4px 23px rgba(255, 255, 255, 0.26);
 }
+
+#searchresult{
+  padding-left: 100px;
+}
+
+
 /*# sourceMappingURL=estilo.css.map */

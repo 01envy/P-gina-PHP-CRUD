@@ -13,10 +13,10 @@ if(isset($_POST['input'])){
 
     if(mysqli_num_rows($result) > 0){?>
 
-        <div class = "container">
+        <div class = "container bg-dark text-white">
 
                 <table class="table table-bordered table-striped mt-4" >
-                    <thead>
+                    <thead class= "text-light">
                         <tr>
                             <th>Codigo</th>
                             <th>usuario</th>
@@ -29,7 +29,7 @@ if(isset($_POST['input'])){
                             <th></th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody class= "text-light">
                         <?php
                         while($row = mysqli_fetch_assoc($result)){
 
@@ -43,7 +43,7 @@ if(isset($_POST['input'])){
 
                             ?>
 
-                            <tr>
+                            <tr class= "text-light">
                                 <td><?php echo $codusuario;?></td>
                                 <td><?php echo $usuario;?></td>
                                 <td><?php echo $contrasena;?></td>

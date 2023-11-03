@@ -1,3 +1,12 @@
+<?php 
+    include("conexion.php");
+    $con=conectar();
+
+    $sql="SELECT *  FROM usuarios";
+    $query=mysqli_query($con,$sql);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -79,25 +88,42 @@
 
   <div class="registrarse">
     <div class="container d-flex">
-      <form>
+      <form action="insertar.php" method="POST">
           <h2 id="exo2">Registro de Cuenta</h2>
           <div class="form-row">
             <div class="form-group col-md-6">
-              <label for="inputEmail4">Correo</label>
-              <input type="email" class="form-control" id="inputEmail4" placeholder="Correo">
+              <label for="inputEmail4">Usuario</label>
+              <input type="text" class="form-control" id="inputEmail4" placeholder="Usuario" name="usuario">
             </div>
             <div class="form-group col-md-6">
-              <label for="inputPassword4">Usuario</label>
-              <input type="text" class="form-control" id="inputPassword4" placeholder="Usuario">
+              <label for="inputPassword4">Contraseña</label>
+              <input type="password" class="form-control" id="inputPassword4" placeholder="Contraseña" name="contrasena">
             </div>
           </div>
           <div class="form-group">
-            <label for="inputPassword">Contraseña</label>
-            <input type="password" class="form-control" id="inputAddress" placeholder="Contraseña">
+            <label for="inputPassword">Correo</label>
+            <input type="email" class="form-control" id="inputAddress" placeholder="ejemplo@gmail.com" name="correo">
+          </div>
+          <div>
+            <label>Sexo: </label>
+            <input type="radio"
+                name="sexo"
+                value="Male"
+                checked>
+            <label>Masculino</label>
+
+            <input type="radio"
+                name="sexo"
+                value="Female">
+            <label>Femenino</label>
           </div>
           <div class="form-group">
-            <label for="inputPassword2">Confirme contraseña</label>
-            <input type="password" class="form-control" id="inputAddress2" placeholder="Confirme contraseña">
+            <label for="inputPassword2">Fecha de nacimiento</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Fecha de nacimiento" name="fechanac">
+          </div>
+          <div class="form-group">
+            <label for="inputPassword2">Edad</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Edad" name="edad">
           </div>
           <div class="form-group">
             <div class="form-check">

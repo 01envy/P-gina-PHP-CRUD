@@ -31,19 +31,30 @@
     </script>
 
 <body>
-        
+    
+
+
     <div class="titulodb">
-        <h2>php busqueda</h2>
-    </div>
-            
-        
-    <div class="container" style= "max-width: 50%;">
-            <div class = "text-center mt-5 mb-4">
-                <h2>php busqueda</h2>
+        <div class= "container" style="max-width: 50%;">
+            <div class="text-center mt-5 mb-4">
+                <h2> BUSQUEDA</h2>
             </div>
-            <input type="text" class= "form-control" id="live_search" autocomplete="off" placeholder="Buscar...">
+
+            <div class="barrabusqueda">
+                <input type="text" class= "form-control" id="live_search" autocomplete="off" placeholder="Buscar...">
+            </div>
+        </div>
+
+    </div>
+
+    
+    
+    
+    <div class="recuadro">
+        <div class="container d-flex bg-dark text-light">
+            
             <div class="col-md-3">
-                <h1>Ingrese datos</h1>
+                <h2>Ingrese datos</h2>
                     <form action="insertar.php" method="POST">
 
                         <input type="text" class="form-control mb-3" name="usuario" placeholder="usuario">
@@ -53,13 +64,13 @@
                         <label>Sexo: </label>
                         <input type="radio"
                             name="sexo"
-                            value="Male"
+                            value="Masculino"
                             checked>
                         <label>Masculino</label>
 
                         <input type="radio"
                             name="sexo"
-                            value="Female">
+                            value="Femenino">
                         <label>Femenino</label>
                         </div><br />
                         <input type="text" class="form-control mb-3" name="fechanac" placeholder="fechanac">
@@ -69,6 +80,10 @@
                     </form>
             </div>
             <div id ="searchresult"></div>
+        </div>
+            
+        
+    
     </div>
 
 
