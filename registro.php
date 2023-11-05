@@ -202,7 +202,7 @@
             <div>
                 <ul>
                     <li>
-                        <img class="imagenfooter" src="nerv.png">
+                        <img class="imagenfooter" src="img/nerv.png">
                     </li>
                 </ul>
             </div>
