@@ -41,13 +41,9 @@ $sql = "INSERT INTO usuarios VALUES ('$codusuario', '$usuario', '$contrasena', '
 
 $query = mysqli_query($con, $sql);
 
-if ($query) {
+if($query){
+    Header("Location: usuario.php");
     
-    header("Refresh: 0;url: usuario.php?success=registro_exitoso");
-    echo "<script>alert('Exito');</script>";
-} else {
-    
-    header("Refresh: 0;url: usuario.php?error=base_de_datos");
-    echo "<script>alert('error');</script>";
+}else {
 }
 ?>
