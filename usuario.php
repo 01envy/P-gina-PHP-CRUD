@@ -5,6 +5,17 @@
     $sql="SELECT *  FROM usuarios";
     $query=mysqli_query($con,$sql);
 
+    
+
+    if (isset($_GET['errors'])) {
+        $error_messages = explode(",", $_GET['errors']);
+        echo "<script>alert('Error: " . implode("\\n", $error_messages) . "');</script>";
+    }
+    
+    if (isset($_GET['success'])) {
+        $success_message = $_GET['success'];
+        echo "<script>alert('Éxito: $success_message');</script>";
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,6 +29,9 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
 </head>
+
+
+
 
     <script>
         function confirmacion(){
@@ -57,9 +71,9 @@
                 <h2>Ingrese datos</h2>
                     <form action="insertar.php" method="POST">
 
-                        <input type="text" class="form-control mb-3" name="usuario" placeholder="usuario">
-                        <input type="text" class="form-control mb-3" name="contrasena" placeholder="contrasena">
-                        <input type="text" class="form-control mb-3" name="correo" placeholder="correo">
+                        <input type="text" class="form-control mb-3" name="usuario" placeholder="usuario" value="<?php if(isset($usuario)) echo $usuario ?>">
+                        <input type="text" class="form-control mb-3" name="contrasena" placeholder="contrasena" value="<?php if(isset($contrasena)) echo $contrasena ?>">
+                        <input type="text" class="form-control mb-3" name="correo" placeholder="correo" value="<?php if(isset($correo)) echo $correo ?>" >
                         <div>
                         <label>Sexo: </label>
                         <input type="radio"
@@ -73,13 +87,15 @@
                             value="Femenino">
                         <label>Femenino</label>
                         </div><br />
-                        <input type="text" class="form-control mb-3" name="fechanac" placeholder="fechanac">
-                        <input type="text" class="form-control mb-3" name="edad" placeholder="edad">
+                        <input type="text" class="form-control mb-3" name="fechanac" placeholder="fecha de nacimiento" value="<?php if(isset($fechanac)) echo $fechanac ?>">
+                        <input type="text" class="form-control mb-3" name="edad" placeholder="edad" value="<?php if(isset($edad)) echo $edad ?>">
                                     
-                        <input type="submit" class="btn btn-primary">
+                        <input type="submit" name="submit" class="btn btn-primary">
+                        
+                        
                     </form>
             </div>
-
+            
 
             <div class="container text-light">           
                 <table class="table table-striped text-light">
@@ -138,7 +154,6 @@
     
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
     <script>
         $(document).ready(function(){
         $('#getName').on("keyup", function(){

@@ -88,42 +88,42 @@
 
   <div class="registrarse">
     <div class="container d-flex">
-      <form action="insertar.php" method="POST">
+      <form action="insertar2.php" method="POST">
           <h2 id="exo2">Registro de Cuenta</h2>
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="inputEmail4">Usuario</label>
-              <input type="text" class="form-control" id="inputEmail4" placeholder="Usuario" name="usuario">
+              <input type="text" class="form-control" id="inputEmail4" placeholder="Usuario" name="usuario" required>
             </div>
             <div class="form-group col-md-6">
               <label for="inputPassword4">Contraseña</label>
-              <input type="password" class="form-control" id="inputPassword4" placeholder="Contraseña" name="contrasena">
+              <input type="password" class="form-control" id="inputPassword4" placeholder="Contraseña" name="contrasena" required>
             </div>
           </div>
           <div class="form-group">
             <label for="inputPassword">Correo</label>
-            <input type="email" class="form-control" id="inputAddress" placeholder="ejemplo@gmail.com" name="correo">
+            <input type="email" class="form-control" id="inputAddress" placeholder="ejemplo@gmail.com" name="correo" required>
           </div>
           <div>
             <label>Sexo: </label>
             <input type="radio"
-                name="sexo"
+                name="sexo" required
                 value="Male"
                 checked>
             <label>Masculino</label>
 
             <input type="radio"
-                name="sexo"
+                name="sexo" required
                 value="Female">
             <label>Femenino</label>
           </div>
           <div class="form-group">
             <label for="inputPassword2">Fecha de nacimiento</label>
-            <input type="text" class="form-control" id="inputAddress2" placeholder="Fecha de nacimiento" name="fechanac">
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Fecha de nacimiento" name="fechanac" required>
           </div>
           <div class="form-group">
             <label for="inputPassword2">Edad</label>
-            <input type="text" class="form-control" id="inputAddress2" placeholder="Edad" name="edad">
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Edad" name="edad" required>
           </div>
           <div class="form-group">
             <div class="form-check">
@@ -134,12 +134,16 @@
             </div>
           </div>
           
-          <button type="submit" class="btn btn-primary">Enviar</button>
+          <button type="submit" class="btn btn-primary" name="submit">Enviar</button>
 
           <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
             ¿Ya tienes cuenta?
         </button>
           
+
+
+
+
           <!-- Modal -->
           <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -254,3 +258,4 @@
 
 </body>
 </html>
+
