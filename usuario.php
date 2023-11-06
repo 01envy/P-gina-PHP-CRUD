@@ -55,9 +55,9 @@
     
     
     <div class="recuadro">
-        <div class="container d-flex bg-dark text-light">
+        <div class="container d-flex bg-dark text-light p-4">
             
-            <div class="col-md-3">
+            <div class="col-md-3 p-4">
                 <h2>Ingrese datos</h2>
                     <form action="insertar.php" method="POST">
 
@@ -70,12 +70,12 @@
                             name="sexo"
                             value="Masculino"
                             checked>
-                        <label>Masculino</label>
+                        <label>Hombre</label>
 
                         <input type="radio"
                             name="sexo"
                             value="Femenino">
-                        <label>Femenino</label>
+                        <label>Mujer</label>
                         <input type="radio"
                             name="sexo"
                             value="otro">
@@ -105,7 +105,7 @@
             </div>
             
 
-            <div class="container text-light">           
+            <div class="container text-light p-3">           
                 <table class="table table-striped text-light">
                     <thead>
                     <tr>
