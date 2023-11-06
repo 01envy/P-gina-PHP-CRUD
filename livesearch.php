@@ -5,7 +5,7 @@ include("conexion.php");
 
     $input= $_POST['input'];
 
-    $sql = "SELECT * FROM usuarios WHERE usuario LIKE '{$input}%' OR contrasena LIKE '{$input}%' OR correo LIKE '{$input}%' OR sexo LIKE '{$input}%' OR fechanac LIKE '{$input}%' OR edad LIKE '{$input}%'"; 
+    $sql = "SELECT * FROM usuarios WHERE usuario LIKE '{$input}%' OR contrasena LIKE '{$input}%' OR correo LIKE '{$input}%' OR sexo LIKE '{$input}%' OR fechanac LIKE '{$input}%' OR edad LIKE '{$input}%' OR codusuario LIKE '{$input}%'"; 
     $query = mysqli_query($con,$sql);
     $data='';
     

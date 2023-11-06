@@ -133,6 +133,21 @@
               </label>
             </div>
           </div>
+          <?php
+
+
+            if (isset($_GET['error'])) {
+                  $error_message = $_GET['error'];
+                  echo "<div class='error'>$error_message</div>";
+              }
+
+            if (isset($_GET['success'])) {
+                  $success_message = $_GET['success'];
+                  echo "<div class='success'>$success_message</div>";
+              }
+
+                        
+          ?>
           
           <button type="submit" class="btn btn-primary" name="submit">Enviar</button>
 

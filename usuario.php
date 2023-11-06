@@ -5,17 +5,7 @@
     $sql="SELECT *  FROM usuarios";
     $query=mysqli_query($con,$sql);
 
-    
 
-    if (isset($_GET['errors'])) {
-        $error_messages = explode(",", $_GET['errors']);
-        echo "<script>alert('Error: " . implode("\\n", $error_messages) . "');</script>";
-    }
-    
-    if (isset($_GET['success'])) {
-        $success_message = $_GET['success'];
-        echo "<script>alert('Éxito: $success_message');</script>";
-    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -86,12 +76,30 @@
                             name="sexo"
                             value="Femenino">
                         <label>Femenino</label>
+                        <input type="radio"
+                            name="sexo"
+                            value="otro">
+                        <label>Otro</label>
                         </div><br />
-                        <input type="text" class="form-control mb-3" name="fechanac" placeholder="fecha de nacimiento" value="<?php if(isset($fechanac)) echo $fechanac ?>">
+                        <input type="text" class="form-control mb-3" name="fechanac" placeholder="N° de teléfono" value="<?php if(isset($fechanac)) echo $fechanac ?>">
                         <input type="text" class="form-control mb-3" name="edad" placeholder="edad" value="<?php if(isset($edad)) echo $edad ?>">
                                     
                         <input type="submit" name="submit" class="btn btn-primary">
+                        <?php
+
+
+                        if (isset($_GET['error'])) {
+                            $error_message = $_GET['error'];
+                            echo "<div class='error'>$error_message</div>";
+                        }
+
+                        if (isset($_GET['success'])) {
+                            $success_message = $_GET['success'];
+                            echo "<div class='success'>$success_message</div>";
+                        }
+
                         
+                        ?>
                         
                     </form>
             </div>
@@ -106,7 +114,7 @@
                         <th>Contraseña</th>
                         <th>Correo</th>
                         <th>Sexo</th>
-                        <th>F.de nacimiento</th>
+                        <th>N° de teléfono</th>
                         <th>Edad</th>
                     </tr>
                     </thead>
