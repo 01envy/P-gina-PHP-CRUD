@@ -110,16 +110,20 @@
                 name="sexo" required
                 value="Male"
                 checked>
-            <label>Masculino</label>
+            <label>Hombre</label>
 
             <input type="radio"
                 name="sexo" required
                 value="Female">
-            <label>Femenino</label>
+            <label>Mujer</label>
+            <input type="radio"
+                name="sexo"
+                value="otro">
+            <label>Otro</label>
           </div>
           <div class="form-group">
-            <label for="inputPassword2">Fecha de nacimiento</label>
-            <input type="text" class="form-control" id="inputAddress2" placeholder="Fecha de nacimiento" name="fechanac" required>
+            <label for="inputPassword2">N° de teléfono</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="N° de teléfono" name="fechanac" required>
           </div>
           <div class="form-group">
             <label for="inputPassword2">Edad</label>
