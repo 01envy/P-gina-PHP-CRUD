@@ -27,12 +27,10 @@ if (!ctype_digit($edad)) {
 }
 
 if (count($errors) > 0) {
-    // Si hay errores, redirige a usuario.php con un mensaje de error
     header("Location: usuario.php?error=" . urlencode(implode(", ", $errors)));
     exit;
 }
 
-// Ahora puedes proceder a la inserción en la base de datos
 $codusuario = null;
 $sexo = $_POST['sexo'];
 $fechanac = $_POST['fechanac'];

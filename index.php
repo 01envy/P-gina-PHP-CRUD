@@ -1,3 +1,12 @@
+<?php 
+    include("conexion.php");
+    $con=conectar();
+
+    $sql="SELECT *  FROM usuarios";
+    $query=mysqli_query($con,$sql);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,10 +27,10 @@
             <img src="logo2.png" width=200px height=auto>
             <ul>
                 <div class="botonesnav">
-                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.php">Inicio</a></li>
                     <li><a href="Nosotros.html">Nosotros</a></li>
-                    <li><a href="index.html">Historia</a></li>
-                    <li><a href="index.html">Noticias</a></li>
+                    <li><a href="index.php">Historia</a></li>
+                    <li><a href="index.php">Noticias</a></li>
                     <li>
                         <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             Login
@@ -36,7 +45,7 @@
                                 <div class="modal-body">
                                     <div class="container">
                                         <div class="d-block">
-                                            <div class="col-4 col-md-6 offset-md-3">
+                                            <div class="col-8 col-sm">
                                                 <form>
                                                     <h2 id="exo2">Inicio de sesión</h2>
                                                     <div class="form-group">
@@ -52,12 +61,11 @@
                                                       <input type="checkbox" class="form-check-input" id="exampleCheck1">
                                                       <label class="form-check-label" for="exampleCheck1">Guardar datos</label>
                                                     </div>
-                                                    <div class="form-group">
-                                                        <div class="form-check">
-                                                            <a href="registro.html" id="exo2"><i>No tienes cuenta?</i></a>
-                                                        </div>
+                                                    <div class="d-block">
+                                                        <button type="submit" class="btn btn-primary mt-2" id="exo2"><i>Enviar</i></button>                                                       
+                                                        <a href="registro.php" id="exo2"><i>No tienes cuenta?</i></a>                                                      
+                                                        
                                                     </div>
-                                                    <button type="submit" class="btn btn-primary">Enviar</button>
                                                 </form>
                                             </div>
                                         </div>

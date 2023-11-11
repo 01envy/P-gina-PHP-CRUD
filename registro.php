@@ -25,10 +25,10 @@
         <img src="logo2.png" width=200px height=auto>
         <ul>
             <div class="botonesnav">
-                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.php">Inicio</a></li>
                 <li><a href="Nosotros.html">Nosotros</a></li>
-                <li><a href="index.html">Historia</a></li>
-                <li><a href="index.html">Noticias</a></li>
+                <li><a href="index.php">Historia</a></li>
+                <li><a href="index.php">Noticias</a></li>
                 <li>
                     <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         Login
@@ -133,7 +133,7 @@
             <div class="form-check">
               <input class="form-check-input" type="checkbox" id="gridCheck">
               <label class="form-check-label" for="gridCheck">
-                Guardar datos
+                Acepto recibir noticias.
               </label>
             </div>
           </div>
