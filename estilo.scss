@@ -177,9 +177,10 @@ h1::after{
     color: white;
     background-color: #1e2122;
     display: flex;
-    margin: 10px 600px 150px 600px;
+    margin: 0px 0px 0px 600px;
     justify-content: center;
     padding: 30px 0 50px 100px;
+    height: 100vh;
 }
 
 /*---------------historia------------*/
@@ -414,3 +415,6 @@ h1::after{
     padding: 20px;
     
 }
+
+
+
