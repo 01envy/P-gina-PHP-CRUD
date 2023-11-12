@@ -67,7 +67,7 @@
                 <input type="submit" class="btn btn-primary" name="btningresar" value="iniciar sesion">
 
                 <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    ¿Ya tienes cuenta?
+                    <a href= "registro.php">¿No tienes cuenta?</a>
                 </button>
                 
             </div>

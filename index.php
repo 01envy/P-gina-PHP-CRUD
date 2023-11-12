@@ -5,6 +5,9 @@
     $sql="SELECT *  FROM usuarios";
     $query=mysqli_query($con,$sql);
     session_start();
+    if(empty($_SESSION["codusuario"])) {
+        header("location: login.php");
+    }
 
 ?>
 
@@ -19,8 +22,11 @@
     <link rel="stylesheet" href="estilo.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="icon" href="img/nerv.png">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    
+
+  
+    
+    
     
     
 </head>
@@ -36,9 +42,18 @@
                     <li><a href="index.php">Noticias</a></li>
                     <li>
                         
-                        <button type="button" id="login" name="login" class="btn btn-dark" data-toggle="modal" data-target="#loginModal">
-                            Login
+                    <div class="dropdown">
+                        <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <?php
+                            echo $_SESSION["usuario"];
+                            ?>
                         </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Ver mi perfil</a></li>
+                            <li><a class="dropdown-item" href="#">Configuración</a></li>
+                            <li><a class="dropdown-item" href="cerrarsesion.php">Cerrar sesión</a></li>
+                        </ul>
+                    </div>
                         
 
 
@@ -353,47 +368,20 @@
 
 
 
-
-
+    
     <script>
-    $(document).ready(function(){
-            $('#loginbutton').click(function(){
-                var usuario = $('#usuario').val();
-                var contrasena = $('#contrasena').val();
-                if(usuario != '' && contrasena != '')
-                {
-                    $.ajax({
-                        url:"action.php",
-                        method:"POST",
-                        data:{usuario:usuario,contrasena:contrasena},
-                        success: function(data)
-                        {
-                            alert(data);
-                            if (data == 'No')
-                            {
-                                alert("Datos equivocados.");
-                            }
-                            else
-                            {
-                                $('#loginModal').hide();
-                                location.reload();
-                            }
-                        }
-                    });
-                }
-                else
-                {
-                    alert ("Se requieren los dos campos.");
-                }
-
-
-            });
-        });
+    $(document).ready(function () {
+      $('.dropdown-toggle').dropdown();
+    });
     </script>
+    
+<script type="text/javascript" src="Scripts/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="Scripts/bootstrap.min.js"></script>
     
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

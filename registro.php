@@ -215,62 +215,7 @@
   
 
   
-  <footer class="footer">
-    <div class="container">
-        <div class="footerfila">
-            <div>
-                <ul>
-                    <li>
-                        <img class="imagenfooter" src="img/nerv.png">
-                    </li>
-                </ul>
-            </div>
-            <div class="links">
-                <h4>Política</h4>
-                <ul>
-                    <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Acuerdos</a></li>
-                    <li><a href="#">Privacidad</a></li>
-                </ul>
-            </div>
-
-            <div class="links">
-                <h4>Ayuda</h4>
-                <ul>
-                    <li><a href="#">Preguntas</a></li>
-                    <li><a href="#">Soporte</a></li>
-                    <li><a href="#">Errores</a></li>
-                </ul>
-            </div>
-
-            <div class="links">
-                <h4>Reglas</h4>
-                <ul>
-                    <li><a href="#">Saber mas</a></li>
-                    <li><a href="#">Archivos</a></li>
-                    <li><a href="#">Manuales</a></li>
-                </ul>
-            </div>
-
-            <div class="links">
-                <h4>Síguenos</h4>
-                <div class="redes-sociales">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-tumblr"></i></a>
-                </div>
-            </div>
-
-        </div>
-    </div>
-  </footer>
-    
-  
-  <div class="copyright">
-    <img src="copyright.png" alt="copyright" width="20px">
-    <h2>Copyright 2023 Fernando Véliz Silva</h2>
-  </div>
+ 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
