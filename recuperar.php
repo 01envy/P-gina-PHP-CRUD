@@ -32,7 +32,7 @@
                         } elseif (isset($_GET['reset'])) {
                             $correo = $_GET['correo'];
                             $usuario = $_GET['usuario'];
-                            echo '<div class="alert alert-info" role="alert">';
+                            echo '<div class="alert alert-primary" role="alert">';
                             echo 'Para restablecer tu contraseña, <a href="reset.php?correo=' . urlencode($correo) . '&usuario=' . urlencode($usuario) . '">haz clic aquí</a>.';
                             echo '</div>';
                         }

@@ -25,7 +25,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($result) {
         // Contraseña actualizada exitosamente
-        echo 'Contraseña actualizada exitosamente. <a href="index.php">Inicio</a>';
+        header("location: reset.php");
+        echo "<div class='alert alert-danger'>éxito</div>";
+        
         error_log("Query: " . $query);
     } else {
         // Manejar errores en la actualización de la contraseña
