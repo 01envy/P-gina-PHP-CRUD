@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="cssfooter/all.min.css">
     <link rel="stylesheet" href="cssfooter/fontawesome.min.css">
     <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estilo.scss">
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
 </head>
