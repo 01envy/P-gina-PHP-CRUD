@@ -1,25 +1,20 @@
 <?php
-// Verificar si el formulario se envió por el método POST
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Incluir el archivo de conexión
+
     include 'conexion.php';
 
-    // Conectar a la base de datos
     $con = conectar();
 
-    // Obtener los datos del formulario
     $correo = $_POST['correo'];
     $usuario = $_POST['usuario'];
     $nueva_contrasena = $_POST['nueva_contrasena'];
     $confirmar_contrasena = $_POST['confirmar_contrasena'];
 
-    // Validar que las contraseñas coincidan
     if ($nueva_contrasena !== $confirmar_contrasena) {
         echo 'Las contraseñas no coinciden.';
         exit();
     }
-
-    // Actualizar la contraseña en la base de datos
     $query = "UPDATE usuarios SET contrasena = '$nueva_contrasena' WHERE correo = '$correo' AND usuario = '$usuario'";
     $result = mysqli_query($con, $query);
 
@@ -30,14 +25,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
         error_log("Query: " . $query);
     } else {
-        // Manejar errores en la actualización de la contraseña
+        
         echo 'Error al actualizar la contraseña: ' . mysqli_error($con);
     }
 
     // Cerrar la conexión
     mysqli_close($con);
 } else {
-    // Si no se envió por POST, mostrar el formulario de recuperación
+    
     ?>
 
     <!DOCTYPE html>
@@ -94,6 +89,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         <div class="button">
                             <a type="button" href="index.php"><-Volver</a>
                         </div>
+                        
                         
                         
                     </div>            

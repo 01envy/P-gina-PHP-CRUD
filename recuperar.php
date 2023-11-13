@@ -22,21 +22,7 @@
 
             <form action="recuperar_contrasena.php" method="POST">
                 <h2 id="exo2">Recuperar contraseña</h2>
-                <?php
-                        if (isset($_GET['error'])) {
-                            echo '<div class="alert alert-danger" role="alert">Correo electrónico o dirección no encontrados.</div>';
-                        } elseif (isset($_GET['contrasena'])) {
-                            echo '<div class="alert alert-success" role="alert">';
-                            echo 'Tu contraseña es: ' . htmlspecialchars($_GET['contrasena']);
-                            echo '</div>';
-                        } elseif (isset($_GET['reset'])) {
-                            $correo = $_GET['correo'];
-                            $usuario = $_GET['usuario'];
-                            echo '<div class="alert alert-primary" role="alert">';
-                            echo 'Para restablecer tu contraseña, <a href="reset.php?correo=' . urlencode($correo) . '&usuario=' . urlencode($usuario) . '">haz clic aquí</a>.';
-                            echo '</div>';
-                        }
-                ?>
+                
                 
                 
                 <div class="form-row">
@@ -54,9 +40,26 @@
                     <div class="button">
                         <a type="button" href="index.php"><-Volver</a>
                     </div>
+
+                    <?php
+                        if (isset($_GET['error'])) {
+                            echo '<div class="alert alert-danger" role="alert">Correo electrónico o dirección no encontrados.</div>';
+                        } elseif (isset($_GET['contrasena'])) {
+                            echo '<div class="alert alert-success" role="alert">';
+                            echo 'Tu contraseña es: ' . htmlspecialchars($_GET['contrasena']);
+                            echo '</div>';
+                        } elseif (isset($_GET['reset'])) {
+                            $correo = $_GET['correo'];
+                            $usuario = $_GET['usuario'];
+                            echo '<div class="alert alert-primary" role="alert">';
+                            echo 'Credenciales confirmadas, <a href="reset.php?correo=' . urlencode($correo) . '&usuario=' . urlencode($usuario) . '">haz clic aquí</a>.';
+                            echo '</div>';
+                        }
+                ?>
                     
 
                 </div>
+                
             
                 
             </form>
