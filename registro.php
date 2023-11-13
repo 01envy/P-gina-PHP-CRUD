@@ -25,63 +25,7 @@
     <nav>
         <img src="logo2.png" width=200px height=auto>
         <ul>
-            <div class="botonesnav">
-                <li><a href="index.php">Inicio</a></li>
-                <li><a href="Nosotros.html">Nosotros</a></li>
-                <li><a href="index.php">Historia</a></li>
-                <li><a href="index.php">Noticias</a></li>
-                <li>
-                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        Login
-                    </button>
-                      
-                      <!-- Modal -->
-                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                          <div class="modal-content bg-dark">
-                            <div class="modal-header">
-                              <h2 class="modal-title fs-5" id="exampleModalLabel">Registro</h2>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="container">
-                                    <div class="d-block">
-                                        <div class="col-4 col-md-6 offset-md-3">
-                                            <form>
-                                                <h2 id="exo2">Inicio de sesión</h2>
-                                                <div class="form-group">
-                                                  <label for="exampleInputEmail1">Correo electrónico</label>
-                                                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                                                  <small id="emailHelp" class="form-text text-muted">No compatiremos su información con nadie.</small>
-                                                </div>
-                                                <div class="form-group">
-                                                  <label for="exampleInputPassword1">Contraseña</label>
-                                                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                                                </div>
-                                                <div class="form-check">
-                                                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                                  <label class="form-check-label" for="exampleCheck1">Guardar datos</label>
-                                                </div>
-                                                <div class="form-group">
-                                                    <div class="form-check">
-                                                        <a href="registro.html" id="exo2"><i>No tienes cuenta?</i></a>
-                                                    </div>
-                                                </div>
-                                                <button type="submit" class="btn btn-primary">Enviar</button>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                              <button type="button" class="btn btn-primary">Guardar</button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                </li>
-            </div>
+            
         </ul>
     </nav>
   </div>

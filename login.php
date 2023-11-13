@@ -60,9 +60,9 @@
                     </button>
 
                     <div class="my-3">
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-                            Recuperar contraseña
-                        </button>
+                        
+                            <a href="recuperar.php">Recuperar contraseña</a>
+                        
 
                     </div>
                     
