@@ -4,9 +4,7 @@
 
     $sql="SELECT *  FROM usuarios";
     $query=mysqli_query($con,$sql);
-
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
